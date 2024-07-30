@@ -75,6 +75,16 @@ const App = () => {
           {hideSplashScreen ? (
             <Stack.Navigator screenOptions={{ headerShown: false }}>
               <Stack.Screen
+                name="MONITORING"
+                component={MONITORING}
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen
+                name="REGISTER"
+                component={REGISTER}
+                options={{ headerShown: false }}
+              />
+              <Stack.Screen
                 name="GETSTARTED"
                 component={GETSTARTED}
                 options={{ headerShown: false }}
@@ -85,18 +95,8 @@ const App = () => {
                 options={{ headerShown: false }}
               />
               <Stack.Screen
-                name="REGISTER"
-                component={REGISTER}
-                options={{ headerShown: false }}
-              />
-              <Stack.Screen
                 name="HOME"
                 component={HOME}
-                options={{ headerShown: false }}
-              />
-              <Stack.Screen
-                name="MONITORING"
-                component={MONITORING}
                 options={{ headerShown: false }}
               />
               <Stack.Screen
